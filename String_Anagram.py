@@ -19,7 +19,8 @@ def anagram():
                   l2.append(k)
     n=len(str)
     for i in range(0, len(l2), n):
-     l3.append(l2[i:i+n])
+     l3.append(''.join(l2[i:i+n]))
+    
     print(l3)
                
 anagram()
