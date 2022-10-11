@@ -1,4 +1,6 @@
+import re
 def whitespace():
-    str="nabeel ak_gmail"
-    print(str.replace(" ","_").replace("_"," "))
+    str1="nabeel ak_gmail"
+    d={" ":"_","_":" "}
+    print(re.sub(r'[ _]',lambda m:d[m[0]],str1))
 whitespace()
